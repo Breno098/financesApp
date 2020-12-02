@@ -11,7 +11,7 @@ const AppDrawer = createDrawerNavigator();
 function AppRoutes(){
     return(
     <AppDrawer.Navigator
-        
+        drawerContent={ (props) => <CustomDrawer {...props}/> }
         drawerStyle={{
             backgroundColor: '#171717'
         }}
