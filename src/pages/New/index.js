@@ -47,7 +47,7 @@ export default function New() {
     await firebase.database().ref('historic').child(uid).child(key).set({
       type: type,
       value: parseFloat(value).toFixed(2),
-      date: format(new Date(), 'dd/MM/yy')
+      date: format(new Date(), 'dd/MM/yyyy')
     })
 
     let user = firebase.database().ref('users').child(uid);
